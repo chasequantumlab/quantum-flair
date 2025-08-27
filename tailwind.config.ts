@@ -52,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				quantum: {
+					blue: 'hsl(var(--quantum-blue))',
+					teal: 'hsl(var(--quantum-teal))',
+					light: 'hsl(var(--quantum-light))',
+					accent: 'hsl(var(--quantum-accent))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
