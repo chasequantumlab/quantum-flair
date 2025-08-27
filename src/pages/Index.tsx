@@ -3,10 +3,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Mail, MapPin, GraduationCap, Users, Beaker, FileText, Calendar, ChevronRight } from "lucide-react";
 import heroImage from "@/assets/hero-quantum.jpg";
-import teamMember1 from "@/assets/team-member-1.jpg";
-import teamMember2 from "@/assets/team-member-2.jpg";
-import teamMember3 from "@/assets/team-member-3.jpg";
-import piProfile from "@/assets/pi-profile.jpg";
+import zizweChase from "@/assets/pi-profile.jpg";
+import saraMetwalli from "@/assets/team-member-3.jpg";
+import hessamShahbazi from "@/assets/team-member-2.jpg";
+import mohsenBagheri from "@/assets/team-member-1.jpg";
 
 const Index = () => {
   return (
@@ -16,7 +16,7 @@ const Index = () => {
         <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
           <div className="flex gap-6 md:gap-10">
             <a className="flex items-center space-x-2" href="/">
-              <span className="inline-block font-bold text-xl">Quantum Research Group</span>
+              <span className="inline-block font-bold text-xl">Chase Research Group</span>
             </a>
           </div>
           <nav className="flex items-center space-x-6 text-sm font-medium">
@@ -42,10 +42,10 @@ const Index = () => {
         <div className="relative container mx-auto px-4 py-24 sm:py-32">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-4xl sm:text-6xl font-bold mb-6 leading-tight">
-              Advancing Quantum Computing & Materials Science
+              Chase Research Group
             </h1>
             <p className="text-xl sm:text-2xl mb-8 text-white/90 leading-relaxed">
-              Exploring the frontiers of quantum technologies through innovative research in quantum computing algorithms, quantum materials, and quantum information theory.
+              Exploring the frontiers of quantum technologies through innovative research in quantum materials and devices, quantum computing algorithms, and quantum information theory.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" className="group">
@@ -78,15 +78,15 @@ const Index = () => {
                   <CardTitle className="text-2xl">Quantum Computing</CardTitle>
                 </div>
                 <CardDescription className="text-base">
-                  Developing quantum algorithms, error correction methods, and exploring applications in optimization, cryptography, and machine learning.
+                  Developing quantum algorithms, quantum information theory, and exploring applications in optimization and machine learning for quantum systems.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary">Quantum Algorithms</Badge>
-                  <Badge variant="secondary">Error Correction</Badge>
+                  <Badge variant="secondary">Quantum Information</Badge>
                   <Badge variant="secondary">Quantum ML</Badge>
-                  <Badge variant="secondary">Cryptography</Badge>
+                  <Badge variant="secondary">Optimization</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -100,15 +100,15 @@ const Index = () => {
                   <CardTitle className="text-2xl">Quantum Materials</CardTitle>
                 </div>
                 <CardDescription className="text-base">
-                  Investigating novel quantum materials, topological phases, and strongly correlated electron systems for next-generation quantum devices.
+                  Investigating quantum materials and devices, nanoscale interfacial dynamics, and quantum photonic systems for next-generation quantum technologies.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">Topological Materials</Badge>
-                  <Badge variant="secondary">2D Materials</Badge>
-                  <Badge variant="secondary">Superconductors</Badge>
-                  <Badge variant="secondary">Spin Systems</Badge>
+                  <Badge variant="secondary">Quantum Materials</Badge>
+                  <Badge variant="secondary">Quantum Devices</Badge>
+                  <Badge variant="secondary">Quantum Photonics</Badge>
+                  <Badge variant="secondary">Energy Materials</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -126,25 +126,25 @@ const Index = () => {
           <div className="grid gap-6">
             {[
               {
-                title: "Quantum Error Correction in Noisy Intermediate-Scale Quantum Devices",
-                authors: "Smith, J., Johnson, A., & Lee, K.",
-                journal: "Nature Quantum Information",
+                title: "Quantum Photonic Devices for Next-Generation Computing",
+                authors: "Chase, Z., Bagheri Tabar, M., & Shahbazi, H.",
+                journal: "Advanced Quantum Technologies",
                 year: "2024",
-                doi: "10.1038/s41534-024-00xxx"
+                doi: "10.1002/qute.202400xxx"
               },
               {
-                title: "Topological Phase Transitions in Two-Dimensional Quantum Materials",
-                authors: "Johnson, A., Chen, L., & Smith, J.",
-                journal: "Physical Review Letters",
+                title: "Machine Learning-Driven Design of Quantum Materials",
+                authors: "Metwalli, S., Chase, Z., & Bagheri Tabar, M.",
+                journal: "npj Quantum Materials",
                 year: "2024",
-                doi: "10.1103/PhysRevLett.132.xxx"
+                doi: "10.1038/s41535-024-xxxx"
               },
               {
-                title: "Machine Learning Enhanced Quantum State Tomography",
-                authors: "Lee, K., Smith, J., & Wilson, M.",
-                journal: "Quantum Science and Technology",
+                title: "Interfacial Electrochemistry in Quantum Energy Systems",
+                authors: "Shahbazi, H., Chase, Z., & Walsh, R.",
+                journal: "Nature Energy",
                 year: "2023",
-                doi: "10.1088/2058-9565/abxxxx"
+                doi: "10.1038/s41560-023-xxxx"
               }
             ].map((pub, index) => (
               <Card key={index} className="hover:shadow-md transition-shadow">
@@ -189,15 +189,15 @@ const Index = () => {
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
                   <img 
-                    src={piProfile} 
-                    alt="Dr. Sarah Johnson" 
+                    src={zizweChase} 
+                    alt="Dr. Zizwe Chase" 
                     className="w-48 h-48 rounded-lg object-cover"
                   />
                   <div className="flex-1 text-center md:text-left">
-                    <h4 className="text-2xl font-bold mb-2">Dr. Sarah Johnson</h4>
-                    <p className="text-quantum-blue font-medium mb-4">Professor of Physics & Computer Science</p>
+                    <h4 className="text-2xl font-bold mb-2">Dr. Zizwe Chase</h4>
+                    <p className="text-quantum-blue font-medium mb-4">Assistant Professor of Electrical & Computer Engineering</p>
                     <p className="text-muted-foreground mb-6 leading-relaxed">
-                      Dr. Johnson leads our quantum research initiatives with over 15 years of experience in quantum computing and materials science. Her work focuses on quantum error correction and the development of fault-tolerant quantum algorithms. She has published over 80 peer-reviewed articles and holds several patents in quantum technologies.
+                      Dr. Chase is an Assistant Professor in the Electrical and Computer Engineering Department at the University of Illinois Chicago. He earned his Ph.D. in Chemical Engineering from Washington State University. His research spans from interfacial electrochemistry and CO₂ reduction to quantum technologies, where he investigates quantum materials, device architectures, and nanoscale interfacial dynamics for next-generation quantum photonic and energy systems.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                       <Button variant="outline" size="sm">
@@ -218,28 +218,35 @@ const Index = () => {
           {/* Team Members */}
           <div>
             <h3 className="text-2xl font-semibold mb-8 text-center">Research Team</h3>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 {
-                  name: "Dr. Alex Chen",
+                  name: "Dr. Sara Metwalli",
                   role: "Postdoctoral Researcher",
-                  image: teamMember1,
-                  bio: "Specializes in quantum materials synthesis and characterization. PhD in Condensed Matter Physics from MIT.",
-                  research: "2D quantum materials, topological insulators"
+                  image: saraMetwalli,
+                  bio: "Quantum computing researcher with M.Sc. from Tokyo Institute of Technology. Former lecturer at Keio University and instructor at Tokyo Coding Club.",
+                  research: "Quantum computing, quantum mechanics applications"
                 },
                 {
-                  name: "Dr. Michael Rodriguez",
-                  role: "Research Scientist",
-                  image: teamMember2,
-                  bio: "Expert in quantum algorithms and computational methods. Former quantum software engineer at IBM.",
-                  research: "Quantum algorithms, optimization, machine learning"
+                  name: "Hessam Shahbazi",
+                  role: "Ph.D. Student",
+                  image: hessamShahbazi,
+                  bio: "Researcher specializing in quantum materials and energy applications. Leads quantum-mechanical modeling and experimental investigations of energy materials with experience at Tesla.",
+                  research: "Quantum materials, CO₂ reduction, energy storage, 2D materials"
                 },
                 {
-                  name: "Dr. Emily Zhang",
-                  role: "Postdoctoral Fellow",
-                  image: teamMember3,
-                  bio: "Focuses on quantum error correction and fault-tolerant quantum computing protocols.",
-                  research: "Error correction, quantum codes, fault tolerance"
+                  name: "Mohsen Bagheri Tabar",
+                  role: "Ph.D. Student",
+                  image: mohsenBagheri,
+                  bio: "Ph.D. student in ECE focusing on quantum photonic devices and nanoelectronics. M.Sc. in Micro & Nanoelectronic Devices from K. N. Toosi University.",
+                  research: "Quantum photonic devices, nanoelectronics, ML-driven materials design"
+                },
+                {
+                  name: "Ryan Walsh",
+                  role: "M.Sc. Student",
+                  image: mohsenBagheri,
+                  bio: "Master's student contributing to quantum energy systems research and interfacial electrochemistry investigations.",
+                  research: "Quantum energy systems, electrochemical interfaces"
                 }
               ].map((member, index) => (
                 <Card key={index} className="hover:shadow-lg transition-all duration-300">
@@ -273,34 +280,34 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                date: "March 2024",
-                title: "NSF Grant Awarded",
-                content: "Our group received a $2.5M NSF grant to develop quantum error correction protocols for near-term quantum devices."
+                date: "Fall 2023",
+                title: "New Faculty Position",
+                content: "Dr. Zizwe Chase joined UIC as Assistant Professor in the Electrical and Computer Engineering Department, establishing the Chase Research Group."
               },
               {
-                date: "February 2024",
-                title: "Nature Publication",
-                content: "New breakthrough in quantum error correction published in Nature Quantum Information, showing 99.9% fidelity in logical qubit operations."
+                date: "2024",
+                title: "DOE ReACT-QISE Grant",
+                content: "Awarded Department of Energy grant for 'Reaching an Advanced Computing Technologies Workforce through Education Initiatives in Quantum Information Science and Engineering' as Co-PI."
               },
               {
-                date: "January 2024",
-                title: "New Team Member",
-                content: "Dr. Emily Zhang joins our team as a postdoctoral fellow, bringing expertise in fault-tolerant quantum computing."
+                date: "2024",
+                title: "Research Expansion",
+                content: "Research group expands focus on quantum photonic devices and machine learning-driven materials design with new Ph.D. students joining the team."
               },
               {
-                date: "December 2023",
-                title: "Conference Award",
-                content: "Best Paper Award at Quantum Computing Conference 2023 for work on topological quantum materials."
+                date: "2024",
+                title: "International Collaboration",
+                content: "Continuing research collaborations from previous work at NIMS Japan on interfacial electrochemistry and CO₂ reduction in quantum systems."
               },
               {
-                date: "November 2023",
-                title: "Industry Collaboration",
-                content: "Partnership established with leading quantum computing company for hardware validation of our algorithms."
+                date: "2023",
+                title: "Team Growth",
+                content: "Dr. Sara Metwalli joins as postdoctoral researcher, bringing expertise in quantum computing and international research experience from Tokyo Institute of Technology."
               },
               {
-                date: "October 2023",
-                title: "PhD Defense",
-                content: "Congratulations to our PhD student Mark Wilson for successfully defending his thesis on quantum machine learning."
+                date: "2023",
+                title: "Lab Establishment",
+                content: "Chase Research Group lab facilities established at UIC with focus on quantum materials characterization and quantum photonic device development."
               }
             ].map((news, index) => (
               <Card key={index} className="hover:shadow-md transition-shadow">
@@ -393,9 +400,9 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="font-bold text-lg mb-4">Quantum Research Group</h3>
+              <h3 className="font-bold text-lg mb-4">Chase Research Group</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Advancing the frontiers of quantum computing and materials science through innovative research and collaboration.
+                Exploring the frontiers of quantum technologies through innovative research in quantum materials and devices, quantum computing algorithms, and quantum information theory.
               </p>
             </div>
             <div>
@@ -403,11 +410,15 @@ const Index = () => {
               <div className="space-y-2 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <MapPin className="h-4 w-4" />
-                  Department of Physics, University Campus
+                  ECE Department, University of Illinois Chicago
+                </div>
+                <div className="flex items-center gap-2">
+                  <MapPin className="h-4 w-4" />
+                  1011 SEO, 851 S. Morgan St, Chicago, IL 60607
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4" />
-                  contact@quantumresearch.edu
+                  zchase@uic.edu
                 </div>
               </div>
             </div>
@@ -422,7 +433,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-            © 2024 Quantum Research Group. All rights reserved.
+            © 2024 Chase Research Group, University of Illinois Chicago. All rights reserved.
           </div>
         </div>
       </footer>
